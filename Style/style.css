@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: black; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    /* background-image: linear-gradient(to right, rgb(41, 20, 53) 0%, rgb(19, 32, 107) 150%); */
+    background-image: linear-gradient(to right, rgb(14, 24, 77) 0%, rgb(17, 9, 22) 80%);
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sun {
+    background-image: linear-gradient(to right, rgb(226, 17, 17) 0%, rgb(240, 240, 108) 100%);
+    margin-left: -40rem;
+    position: relative;
+    width: 40rem;
+    height: 80rem;
+    border-radius: 50%;
+    box-shadow:
+        5px 1px 20px 10px rgba(238, 255, 0, 0.226),
+        5px 1px 100px 10px rgba(223, 148, 50, 0.555)
+}
+
+.mercury {
+    background-color: grey;
+    height: 1.7rem;
+    width: 1.7rem;
+    border-radius: 50%;
+}
+
+.venus {
+    background-color: rgb(255, 208, 215);
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.earth {
+    background-color: rgb(86, 127, 204);
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.mars {
+    background-color: rgb(243, 107, 107);
+    height: 1.7rem;
+    width: 1.7rem;
+    border-radius: 50%;
+}
+
+.jupiter {
+    background-color: rgb(207, 132, 102);
+    height: 21rem;
+    width: 21rem;
+    border-radius: 50%;
+}
+
+.saturn::before {
+    position: absolute;
+    content: '';
+    bottom: -3rem;
+    width: .4rem;
+    height: 21rem;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.438);
+    transform: rotate(135deg);
+}
+
+.saturn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 232, 157, 0.671);
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+}
+
+
+
+.uranus {
+    background-color: rgba(219, 240, 248, 0.952);
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+}
+
+.neptune {
+    background-color: rgba(177, 202, 190, 0.705);
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container * {
+
+    /*    padding-left: 50rem; */
+}

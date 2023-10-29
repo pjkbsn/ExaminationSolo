@@ -12,10 +12,26 @@ body {
     justify-content: center;
 }
 
+/* .headerText {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 1rem;
+} */
+
 .container {
     /* background-image: linear-gradient(to right, rgb(41, 20, 53) 0%, rgb(19, 32, 107) 150%); */
     background-image: linear-gradient(to right, rgb(14, 24, 77) 0%, rgb(17, 9, 22) 80%);
     width: 100vw;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -24,11 +40,11 @@ body {
 
 .sun {
     background-image: linear-gradient(to right, rgb(226, 17, 17) 0%, rgb(240, 240, 108) 100%);
-    margin-left: -40rem;
+    margin-left: -48%;
     position: relative;
-    width: 40rem;
-    height: 80rem;
-    border-radius: 50%;
+    width: 50%;
+    height: 100%;
+    border-radius: 70%;
     box-shadow:
         5px 1px 20px 10px rgba(238, 255, 0, 0.226),
         5px 1px 100px 10px rgba(223, 148, 50, 0.555)
@@ -64,8 +80,8 @@ body {
 
 .jupiter {
     background-color: rgb(207, 132, 102);
-    height: 21rem;
-    width: 21rem;
+    height: 15rem;
+    width: 15rem;
     border-radius: 50%;
 }
 
@@ -73,8 +89,8 @@ body {
     position: absolute;
     content: '';
     bottom: -3rem;
-    width: .4rem;
-    height: 21rem;
+    width: .3rem;
+    height: 18rem;
     border-radius: 100%;
     background-color: rgba(255, 255, 255, 0.438);
     transform: rotate(135deg);
@@ -86,8 +102,8 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 232, 157, 0.671);
-    height: 15rem;
-    width: 15rem;
+    height: 12rem;
+    width: 12rem;
     border-radius: 50%;
 }
 

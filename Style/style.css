@@ -10,10 +10,14 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
-/* .headerText {
+.headerText {
     position: absolute;
+    margin-left: 100rem;
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -21,11 +25,15 @@ body {
 
 h1 {
     font-size: 5rem;
+    color: white;
+    letter-spacing: .2rem;
 }
 
 h2 {
-    font-size: 1rem;
-} */
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    color: gold;
+}
 
 .container {
     /* background-image: linear-gradient(to right, rgb(41, 20, 53) 0%, rgb(19, 32, 107) 150%); */
@@ -33,15 +41,15 @@ h2 {
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.sun {
+#Solen {
     background-image: linear-gradient(to right, rgb(226, 17, 17) 0%, rgb(240, 240, 108) 100%);
     margin-left: -48%;
     position: relative;
+    flex-shrink: 0;
     width: 50%;
     height: 100%;
     border-radius: 70%;
@@ -50,42 +58,47 @@ h2 {
         5px 1px 100px 10px rgba(223, 148, 50, 0.555)
 }
 
-.mercury {
+#Merkurius {
     background-color: grey;
+    flex-shrink: 0;
     height: 1.7rem;
     width: 1.7rem;
     border-radius: 50%;
 }
 
-.venus {
+#Venus {
     background-color: rgb(255, 208, 215);
+    flex-shrink: 0;
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
 }
 
-.earth {
+#Jorden {
     background-color: rgb(86, 127, 204);
+    flex-shrink: 0;
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
 }
 
-.mars {
+#Mars {
     background-color: rgb(243, 107, 107);
+    flex-shrink: 0;
     height: 1.7rem;
     width: 1.7rem;
     border-radius: 50%;
 }
 
-.jupiter {
+#Jupiter {
     background-color: rgb(207, 132, 102);
+    flex-shrink: 0;
     height: 15rem;
     width: 15rem;
     border-radius: 50%;
 }
 
-.saturn::before {
+#Saturnus::before {
     position: absolute;
     content: '';
     bottom: -3rem;
@@ -96,8 +109,9 @@ h2 {
     transform: rotate(135deg);
 }
 
-.saturn {
+#Saturnus {
     position: relative;
+    flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,16 +123,62 @@ h2 {
 
 
 
-.uranus {
+#Uranus {
     background-color: rgba(219, 240, 248, 0.952);
+    flex-shrink: 0;
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
 }
 
-.neptune {
+#Neptunus {
     background-color: rgba(177, 202, 190, 0.705);
+    flex-shrink: 0;
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
+}
+
+#overlayContainer {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: none;
+    background-color: rgb(0, 0, 0);
+    border: 1px white solid;
+}
+
+#overlayText {
+    display: grid;
+    /*     padding: 20px; */
+    border: 2px orange solid;
+    overflow-y: auto;
+    width: 50%;
+    height: 100%;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(8, 2fr);
+}
+
+.overlay-info {
+    color: white;
+}
+
+
+
+#name {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    background-color: red;
+}
+
+#latinName {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    background-color: purple;
+}
+
+#desc {
+    grid-column-start: 3;
+    grid-column-end: 3;
 }

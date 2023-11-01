@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 
 body {
@@ -22,6 +23,7 @@ body {
     position: absolute;
     top: 2rem;
     right: 3rem;
+    user-select: none;
 
 }
 
@@ -176,16 +178,11 @@ span {
     grid-template-rows: repeat(6, 1fr);
 }
 
-/* #overlayText>* {
-    display: flex;
-    flex-wrap: wrap;
-} */
 
-.overlay-info {
+.overlay-info,
+.overlay-info-border {
     color: white;
-    text-align: center;
 }
-
 
 
 #btn {
@@ -193,12 +190,9 @@ span {
     height: 1.5rem;
 }
 
-article h2 {
-    text-align: center;
-}
-
 #name {
     text-align: center;
+    margin-top: 1rem;
     font-size: 5rem;
     letter-spacing: .3rem;
     grid-column-start: 1;
@@ -220,7 +214,9 @@ article h2 {
     text-align: center;
     grid-column-start: 1;
     grid-column-end: 3;
-    /* background-color: orange; */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.37);
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
 
 #circumference {
@@ -238,13 +234,16 @@ article h2 {
 #tempDay {
     grid-column-start: 1;
     grid-column-end: 2;
-    /* background-color: pink; */
 }
 
 #tempNight {
     grid-column-start: 2;
     grid-column-end: 3;
-    /* background-color: chartreuse; */
+}
+
+.overlay-info-border {
+    border-bottom: 1px rgba(255, 255, 255, 0.27) solid;
+    margin-bottom: 1rem;
 }
 
 
@@ -288,35 +287,17 @@ article h2 {
     opacity: 100%;
 }
 
+.ourGalaxy {
+    transition: 1s;
+}
+
 .ourGalaxy:hover {
     cursor: pointer;
-    box-shadow: 0rem 0rem 1rem white;
-}
-
-/* #Solen:hover{
-    cursor: pointer;
-}
-#Merkurius:hover{
+    box-shadow: 0rem 0rem 3rem white;
 
 }
-#Venus:hover{
 
+#Solen:hover {
+    box-shadow: 0rem 0rem 10rem yellow,
+        0 0 12rem white;
 }
-#Jorden:hover{
-
-}
-#Mars:hover{
-
-}
-#Jupiter:hover{
-
-}
-#Saturnus:hover{
-
-}
-#Uranus:hover{
-
-}
-#Neptunus:hover{
-
-} */

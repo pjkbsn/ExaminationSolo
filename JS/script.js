@@ -26,8 +26,7 @@ allPlanets.forEach(function (planet) {
     planet.addEventListener("click", function () {
         const clickedElementId = planet.id;
         planetInfo(clickedElementId);
-        /* console.log(clickedElementId); */
-    })
+    });
 });
 
 const planetInfo = (planetId) => {

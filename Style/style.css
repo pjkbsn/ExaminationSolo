@@ -189,6 +189,7 @@ span {
 
 .overlay-info-temp {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 1rem;
 }
 
 .overlay-info>*,
@@ -232,7 +233,7 @@ span {
     grid-column-end: 3;
     border-bottom: 1px rgba(255, 255, 255, 0.5) solid;
     letter-spacing: 0.1rem;
-    margin-bottom: .5rem;
+    padding-bottom: 1rem;
     /* background-color: orange; */
 }
 
@@ -258,10 +259,6 @@ span {
     grid-column-end: 3;
 }
 
-.overlay-info-border {
-    border-bottom: 1px rgba(255, 255, 255, 0.27) solid;
-    margin-bottom: 1rem;
-}
 
 
 #moons {

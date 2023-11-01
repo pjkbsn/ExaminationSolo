@@ -41,8 +41,8 @@ const planetInfo = (planetId) => {
         document.getElementById("name").innerHTML = planet.name;
         document.getElementById("latinName").innerHTML = planet.latinName;
         document.getElementById("desc").innerHTML = planet.desc;
-        document.getElementById("circumference").innerHTML = planet.circumference + " KM";
-        document.getElementById("distance").innerHTML = planet.distance + " KM";
+        document.getElementById("circumference").innerHTML = planet.circumference.toLocaleString('sv-SE') + " KM";
+        document.getElementById("distance").innerHTML = planet.distance.toLocaleString('sv-SE') + " KM";
         document.getElementById("tempDay").innerHTML = planet.temp.day + " C";
         document.getElementById("tempNight").innerHTML = planet.temp.night + " C";
 

@@ -231,6 +231,7 @@ span {
     grid-column-end: 3;
     border-bottom: 1px rgba(255, 255, 255, 0.5) solid;
     letter-spacing: 0.1rem;
+    margin-bottom: .5rem;
     /* background-color: orange; */
 }
 

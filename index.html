@@ -11,29 +11,48 @@
 <body>
     <div class="headerText">
         <h1>Solsystemet</h1>
-        <h2>Solaris</h2>
+        <span>Solaris</span>
     </div>
     <div class="container">
-        <article class="allElements" id="Solen">Sun</article>
-        <article class="allElements" id="Merkurius">Mercury</article>
-        <article class="allElements" id="Venus">Venus</article>
-        <article class="allElements" id="Jorden">Earth</article>
-        <article class="allElements" id="Mars">Mars</article>
-        <article class="allElements" id="Jupiter">Jupiter</article>
-        <article class="allElements" id="Saturnus">Saturn</article>
-        <article class="allElements" id="Uranus">Uranus</article>
-        <article class="allElements" id="Neptunus">Neptune</article>
+        <article class="ourGalaxy" id="Solen"></article>
+        <article class="ourGalaxy" id="Merkurius"></article>
+        <article class="ourGalaxy" id="Venus"></article>
+        <article class="ourGalaxy" id="Jorden"></article>
+        <article class="ourGalaxy" id="Mars"></article>
+        <article class="ourGalaxy" id="Jupiter"></article>
+        <article class="ourGalaxy" id="Saturnus"></article>
+        <article class="ourGalaxy" id="Uranus"></article>
+        <article class="ourGalaxy" id="Neptunus"></article>
     </div>
     <div id="overlayContainer">
-        <div id="overlayText">
-            <article id="name" class="overlay-info">name</article>
-            <article id="latinName" class="overlay-info">latinName</article>
-            <article id="desc" class="overlay-info">desc</article>
-            <article id="circumference" class="overlay-info">circumference</article>
-            <article id="distance" class="overlay-info">distance</article>
-            <article id="tempDay" class="overlay-info">temp</article>
-            <article id="moons" class="overlay-info">moons</article>
-            <article id="tempNight" class="overlay-info"></article>
+        <div class="stars"></div>
+        <div id="overlayFlex">
+            <div id="overlayText">
+                <article id="name" class="overlay-info">name</article>
+                <article id="latinName" class="overlay-info">latinName</article>
+                <article id="desc" class="overlay-info">desc</article>
+                <article class="overlay-info">
+                    <h2>OMKRETS</h2>
+                    <p id="circumference"></p>
+                </article>
+                <article class="overlay-info">
+                    <h2>KM FRÅN SOLEN</h2>
+                    <p id="distance"></p>
+                </article>
+                <article class="overlay-info">
+                    <h2>MAX TEMPERATUR</h2>
+                    <p id="tempDay"></p>
+                </article>
+                <article class="overlay-info">
+                    <h2>MIN TEMPERATUR</h2>
+                    <p id="tempNight"></p>
+                </article>
+                <article class="overlay-info">
+                    <h2>MÅNAR</h2>
+                    <p id="moons">moons</p>
+                </article>
+                <button id="btn" onclick="closeOverlay()">Return</button>
+            </div>
         </div>
     </div>
     <script src="./JS/script.js"></script>

@@ -1,6 +1,3 @@
-//Hämta data
-//
-
 // Ange URL:en för JSON-data
 const BASE_URL = 'https://majazocom.github.io/Data/solaris.json';
 let planetData;
@@ -22,21 +19,25 @@ const fetchData = async () => {
     }
 };
 
+//Lägger in en eventlistener på varje DOM-element som har klassen 'allPlanets'
 allPlanets.forEach(function (planet) {
     planet.addEventListener("click", function () {
         const clickedElementId = planet.id;
+        console.log(clickedElementId);
         planetInfo(clickedElementId);
     });
 });
 
-const planetInfo = (planetId) => {
+planetInfo = (planetId) => {
     const planet = planetData.find(item => item.name === planetId);
     if (planet) {
         // Här kan du visa informationen om planeten, t.ex. i en modal
         // Koppla overlay av/på här?
-       /*  const moonNames = planet.moons.map((element) => (element)); */
-        /* const moonElem =  */document.getElementById("moons").innerHTML = planet.moons.join(", ");
+        /*  const moonNames = planet.moons.map((element) => (element)); */
+        /* const moonElem =  document.getElementById("moons").innerHTML = planet.moons.join(", ");*/
         /* moonElem.innerHTML = moonNames.join(", "); */
+
+        document.getElementById("moons").innerHTML = planet.moons.join(", ");
         document.getElementById("overlayContainer").style.display = "block";
         document.getElementById("name").innerHTML = planet.name;
         document.getElementById("latinName").innerHTML = planet.latinName;
@@ -54,7 +55,7 @@ const planetInfo = (planetId) => {
 };
 
 
-
+//Kopplad till onClick i html för att stänga ner overlayen med hjälp av en knapp
 function closeOverlay() {
     document.getElementById("overlayContainer").style.display = "none";
 }
@@ -73,7 +74,4 @@ function createStars() {
 }
 
 createStars();
-
-
-
 fetchData(); 

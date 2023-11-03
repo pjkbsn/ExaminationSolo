@@ -6,11 +6,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: white;
 }
 
 
 body {
-    /* background-color: black; */
     background-image: linear-gradient(to right, rgb(14, 24, 77) 0%, rgb(17, 9, 22) 80%);
     width: 100vw;
     height: 100vh;
@@ -30,14 +30,8 @@ body {
     user-select: none;
 }
 
-span {
-    align-self: flex-end;
-    font-size: 3rem;
-    color: white;
-}
 
 article p {
-    color: #FFF;
     font-family: Roboto Condensed;
     font-size: 1.125rem;
     font-style: normal;
@@ -46,7 +40,6 @@ article p {
 }
 
 .headerText h1 {
-    color: #FFF;
     text-align: right;
     font-family: Secular One;
     font-size: 3.75rem;
@@ -63,16 +56,11 @@ article p {
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 100%;
-    /* 1.5rem */
     letter-spacing: 0.9rem;
 }
 
 .container {
-    /* background-image: linear-gradient(to right, rgb(41, 20, 53) 0%, rgb(19, 32, 107) 150%); */
-
     width: 100%;
-    /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -83,7 +71,6 @@ article p {
     background-image: linear-gradient(to right, rgb(226, 17, 17) 0%, rgb(240, 240, 108) 100%);
     margin-left: -40%;
     position: relative;
-    /* z-index: 10; */
     flex-shrink: 0;
     width: 50%;
     height: 100%;
@@ -194,7 +181,6 @@ article p {
     display: grid;
     margin: 1rem auto;
     width: 50rem;
-    /* height: 95%; */
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
 }
@@ -202,9 +188,7 @@ article p {
 
 .overlay-info,
 .overlay-info-temp {
-    color: white;
     user-select: none;
-    /* text-align: center; */
 }
 
 .overlay-info-temp {
@@ -219,7 +203,6 @@ article p {
 
 .overlay-info h2,
 .overlay-info-temp h2 {
-    color: #FFF;
     font-family: Secular One;
     font-size: 1.125rem;
     font-style: normal;
@@ -228,13 +211,7 @@ article p {
 }
 
 
-/* article h2 {
-    text-align: center;
-} */
-
 #name {
-    /* text-align: center; */
-    color: #FFF;
     font-family: Secular One;
     font-size: 3.75rem;
     font-style: normal;
@@ -243,48 +220,36 @@ article p {
 
     grid-column-start: 1;
     grid-column-end: 2;
-    /* background-color: red; */
 }
 
 #latinName {
-    /* text-align: center; */
     color: #FFD029;
     font-family: Lora;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0.9rem;
-
     grid-column-start: 1;
     grid-column-end: 2;
-    /* background-color: purple; */
 }
 
 #desc {
-    /* text-align: center; */
     grid-column-start: 1;
     grid-column-end: 3;
     border-bottom: 1px rgba(255, 255, 255, 0.5) solid;
     padding-bottom: 1rem;
-
-    color: #FFF;
     font-family: Roboto Condensed;
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 300;
-    /* line-height: 170%; */
-    /* 1.9125rem */
-    /* background-color: orange; */
 }
 
 #circumference {
-    /* background-color: aqua; */
     grid-column-start: 1;
     grid-column-end: 2;
 }
 
 #distance {
-    /* background-color: brown; */
     grid-column-start: 2;
     grid-column-end: 3;
 }
@@ -304,15 +269,9 @@ article p {
 #moons {
     grid-column-start: 1;
     grid-column-end: 3;
-    /* background-color: green; */
+
 }
 
-/* 
-@media only screen and (max-width: 1500px) {
-    body {
-        background-color: lightblue;
-    }
-} */
 
 
 .star {
@@ -333,7 +292,6 @@ article p {
     transition: 1s;
     opacity: 30%;
     border: none;
-    color: white;
     cursor: pointer;
 }
 
@@ -370,5 +328,3 @@ article p {
     box-shadow: 2rem 0 rgba(69, 144, 214, 0.1),
         4rem 0 rgba(69, 144, 214, 0.06);
 }
-
-/* Kommentera koden? */

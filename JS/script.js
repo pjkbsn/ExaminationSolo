@@ -11,8 +11,8 @@ const fetchData = async () => {
         }
         const data = await response.json(); //omvandlar json till javascript object
         planetData = data;
-        console.log(data);
 
+        console.log(planetData);
     }
     catch (error) {
         console.error("Error: ", error);
@@ -28,15 +28,10 @@ allPlanets.forEach(function (planet) {
     });
 });
 
-planetInfo = (planetId) => {
+//Hittar och jämför .name i objektet med #id som man klickar på
+const planetInfo = (planetId) => {
     const planet = planetData.find(item => item.name === planetId);
     if (planet) {
-        // Här kan du visa informationen om planeten, t.ex. i en modal
-        // Koppla overlay av/på här?
-        /*  const moonNames = planet.moons.map((element) => (element)); */
-        /* const moonElem =  document.getElementById("moons").innerHTML = planet.moons.join(", ");*/
-        /* moonElem.innerHTML = moonNames.join(", "); */
-
         document.getElementById("moons").innerHTML = planet.moons.join(", ");
         document.getElementById("overlayContainer").style.display = "block";
         document.getElementById("name").innerHTML = planet.name;
@@ -47,11 +42,11 @@ planetInfo = (planetId) => {
         document.getElementById("tempDay").innerHTML = planet.temp.day + " C";
         document.getElementById("tempNight").innerHTML = planet.temp.night + " C";
 
-
         console.log(planet);
     } else {
         console.log("Planet not found in data");
     }
+    createStars();
 };
 
 
@@ -63,8 +58,9 @@ function closeOverlay() {
 // Skapa stjärnor funktionen
 const starContainer = document.querySelector(".stars");
 
+//Skapar ny 'stjärna'(element) på en random plats vid varje iteration
 function createStars() {
-    for (let i = 0; i < 58; i++) {
+    for (let i = 0; i < 99; i++) {
         const star = document.createElement("div");
         star.className = "star";
         star.style.left = `${Math.random() * 100}%`;
@@ -73,5 +69,5 @@ function createStars() {
     }
 }
 
-createStars();
+
 fetchData(); 

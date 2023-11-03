@@ -180,7 +180,6 @@ article p {
     height: 100vh;
     position: absolute;
     background-image: inherit;
-    /* background-image: linear-gradient(to right, rgb(14, 24, 77) 0%, rgb(17, 9, 22) 80%); */
     display: none;
 }
 
@@ -193,12 +192,9 @@ article p {
 
 #overlayText {
     display: grid;
-    /* border: 2px orange solid; */
-    /* overflow-y: auto; */
-    /* align-self: stretch; */
-    margin-top: 1rem;
-    width: 65%;
-    height: 95%;
+    margin: 1rem auto;
+    width: 50rem;
+    /* height: 95%; */
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
 }
